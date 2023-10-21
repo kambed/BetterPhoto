@@ -9,12 +9,13 @@ import MenuItem from '@mui/material/MenuItem';
 import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import {Link} from "react-router-dom";
 // @ts-ignore
-import logo from "../assets/IDEMIA_Logo.png";
+import logo from "../assets/betterphoto_logo_wide.png";
 
-const pages = [{name: 'AUDIT SESSIONS', route: '/audits'},
+const pages = [
     {name: 'PRODUCTS', route: '/products'},
-    {name: 'QUESTIONS', route: '/'},
-    {name: 'STATISTICS', route: '/'}];
+    {name: 'GALLERY', route: '/gallery'},
+    {name: 'CONTACT', route: '/contact'}
+];
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
