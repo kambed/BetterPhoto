@@ -6,15 +6,15 @@ import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import {Link} from "react-router-dom";
 // @ts-ignore
-import logo from "../assets/IDEMIA_Logo.png";
+import logo from "../assets/betterphoto_logo_wide.png";
 
-const pages = [{name: 'AUDIT SESSIONS', route: '/audits'},
+const pages = [
     {name: 'PRODUCTS', route: '/products'},
-    {name: 'QUESTIONS', route: '/'},
-    {name: 'STATISTICS', route: '/'}];
+    {name: 'GALLERY', route: '/gallery'},
+    {name: 'CONTACT', route: '/contact'}
+];
 
 function NavBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -59,11 +59,9 @@ function NavBar() {
                             display: {xs: 'block', md: 'none'},
                         }}>
                         {pages.map((page) =>
-                            <MenuItem key={page.name}>
-                                <Link to={page.route} style={{textDecoration: 'none', color: '#440099'}}>
-                                    {page.name}
-                                </Link>
-                            </MenuItem>
+                            <Link key={page.name} to={page.route} style={{textDecoration: 'none', color: '#000000'}}>
+                                <MenuItem>{page.name}</MenuItem>
+                            </Link>
                         )}
                     </Menu>
                 </Box>
@@ -73,14 +71,10 @@ function NavBar() {
                 </Link>
                 <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                     {pages.map((page) =>
-                        <MenuItem key={page.name}>
-                            <Link to={page.route} style={{textDecoration: 'none', color: '#FFFFFF'}}>{page.name}</Link>
-                        </MenuItem>
+                        <Link key={page.name} to={page.route} style={{textDecoration: 'none', color: '#FFFFFF'}}>
+                            <MenuItem>{page.name}</MenuItem>
+                        </Link>
                     )}
-                </Box>
-
-                <Box sx={{flexGrow: 0, margin: '0px 30px 0px 30px'}}>
-                    <Link to={"/login"} style={{color: '#FFFFFF'}}><LogoutRoundedIcon className='logout-icon'/></Link>
                 </Box>
             </Toolbar>
         </AppBar>
