@@ -7,8 +7,8 @@ import logo from "../../assets/betterphoto_logo_full.png";
 
 function Contact() {
     return (
-        <>
-            <video className='videoTag' autoPlay loop muted>
+        <div className="overflow-hidden">
+            <video className='videoTag overflow-hidden' autoPlay loop muted>
                 <source src={backgroundVideo} type='video/mp4'/>
             </video>
             <div className='videoGradient'/>
@@ -28,7 +28,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

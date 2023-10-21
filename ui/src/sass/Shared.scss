@@ -1,5 +1,9 @@
 @import "variables";
 
+html {
+  overflow: auto;
+}
+
 .MuiButton-root {
   display: inline-block;
   padding: .4rem .9rem;
