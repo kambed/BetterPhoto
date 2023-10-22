@@ -11,9 +11,10 @@ import {Link} from "react-router-dom";
 import logo from "../assets/betterphoto_logo_wide.png";
 
 const pages = [
-    {name: 'PRODUCTS', route: '/products'},
-    {name: 'GALLERY', route: '/gallery'},
-    {name: 'CONTACT', route: '/contact'}
+    {name: 'OFERTA', route: '/products'},
+    {name: 'GALERIA', route: '/gallery'},
+    {name: 'POMOC', route: '/help'},
+    {name: 'KONTAKT', route: '/contact'}
 ];
 
 function NavBar() {

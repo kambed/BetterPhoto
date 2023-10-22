@@ -28,6 +28,7 @@ function Contact() {
                     </div>
                 </div>
             </div>
+            <div style={{height: "calc(100vh - 64px)"}}/>
         </div>
     );
 }
