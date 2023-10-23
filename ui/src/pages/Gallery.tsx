@@ -24,6 +24,7 @@ function Gallery() {
             <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
                 {images.slice(0, 5).map((image) =>
                     <img
+                        key={image}
                         src={image}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt=""
@@ -34,6 +35,7 @@ function Gallery() {
             <div className="col-lg-4 mb-4 mb-lg-0">
                 {images.slice(5, 10).map((image) =>
                     <img
+                        key={image}
                         src={image}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt=""
@@ -44,6 +46,7 @@ function Gallery() {
             <div className="col-lg-4 mb-4 mb-lg-0">
                 {images.slice(10, 16).map((image) =>
                     <img
+                        key={image}
                         src={image}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt=""

@@ -4,10 +4,11 @@ html {
   overflow: auto;
 }
 
-.MuiButton-root {
+.default-button {
   display: inline-block;
   padding: .4rem .9rem;
   border-radius: .9rem;
+  border-color: transparent;
   color: #fff;
   text-transform: uppercase;
   font-size: .8rem;
@@ -23,7 +24,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: $violet-base;
+    background-color: $brown-base;
     border-radius: .9rem;
     z-index: -2;
   }
@@ -34,7 +35,7 @@ html {
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: darken($violet-base, 15%);
+    background-color: darken($brown-base, 15%);
     transition: all .3s;
     border-radius: .9rem;
     z-index: -1;
@@ -49,7 +50,7 @@ html {
 }
 
 .MuiToolbar-root {
-  background-color: $violet-base;
+  background-color: $brown-base;
   height: $nav-bar-height;
 }
 
@@ -84,7 +85,7 @@ html {
 
   thead th {
     background-color: $gray-300;
-    color: $violet-base;
+    color: $brown-base;
     font-weight: 500;
     font-size: 1.1rem;
 
@@ -116,7 +117,7 @@ html {
 
   td:first-child {
     background-color: $gray-300;
-    color: $violet-base;
+    color: $brown-base;
     font-weight: 600;
     font-size: 1.1rem;
     width: 15%;
@@ -159,4 +160,10 @@ hr.MuiDivider-root {
 
 .image-gallery {
   width: 100vw;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #000; /* Kolor i styl linii */
+  margin: 10px 0; /* Odstęp od góry i dołu linii */
 }
