@@ -11,6 +11,7 @@ import Offer from "./pages/Offer";
 import Box from "@mui/material/Box";
 import "react-image-gallery/styles/css/image-gallery.css";
 import './sass/Shared.scss';
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 function App() {
     return (
@@ -29,6 +30,15 @@ function App() {
 
                     <Route path="*" element={<h1>PAGE NOT FOUND</h1>}/>
                 </Routes>
+                <FloatingWhatsApp
+                    accountName="BetterPhoto"
+                    phoneNumber="500500500"
+                    chatMessage="Cześć! Jak możemy Ci pomóc?"
+                    allowEsc
+                    allowClickAway
+                    notification
+                    notificationSound
+                />
                 <Footer/>
             </Router>
         </Box>
